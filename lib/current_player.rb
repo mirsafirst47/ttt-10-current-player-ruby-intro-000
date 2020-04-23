@@ -10,6 +10,7 @@ def turn_count(board)
 end
 
 def current_player(board)
+  #turn_count(board).even? ? return "X" : turn_count(board).odd? ? return "O"#{ not working ternary method. Needs practice}
   if turn_count(board).even?# It means if the turn_count is even. also turn_count(board) % 2 == 0 works as well
     return "X"#return the Value
   elsif turn_count(board).odd?# It means if the turn_count is odd, also turn_count(board) % 2 != 0 works as well
